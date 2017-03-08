@@ -1,0 +1,8 @@
+name: hummingboard-gadget
+version: 16.04-1
+summary: solidrun IMX6 series
+description: |
+ This package is used to setup a humming board
+type: gadget
+architectures:
+  - armhf

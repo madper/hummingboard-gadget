@@ -1,0 +1,15 @@
+device-tree: imx6q-hummingboard.dtb
+device-tree-origin: kernel
+volumes:
+  madper:
+    bootloader: u-boot
+    schema: mbr
+    structure:
+      - type: 0C
+        filesystem: vfat
+        filesystem-label: system-boot
+        size: 128M
+        content:
+          - source: boot-assets/
+            target: /
+
