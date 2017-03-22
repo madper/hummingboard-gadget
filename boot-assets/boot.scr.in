@@ -1,0 +1,9 @@
+setenv bootenv uboot.env
+
+if run loadbootenv; then
+    run importbootenv
+fi;
+
+if run loadbootfile; then
+    run mmcboot;
+fi;
